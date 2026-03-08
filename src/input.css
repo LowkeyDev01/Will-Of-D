@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 .font-one{
-    font-family: Outfit;
+    font-family: "Outfit";
 }
 .bgd{
     background-image: url(../_.jpeg);
@@ -12,3 +12,4 @@
     background-position: center;
     background-size: cover;
 }
+
