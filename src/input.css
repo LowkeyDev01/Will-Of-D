@@ -1,15 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Teko:wght@300..700&display=swap");
 @import "tailwindcss";
 
-
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-
-.font-one{
-    font-family: "Outfit";
+.font-one {
+  font-family: "Outfit";
 }
-.bgd{
-    background-image: url(../_.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.font-two {
+  font-family: Teko;
+}
+.bgd {
+  background-image: url(../_.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@keyframes shuffle {
+  0%, 100% {
+    border: 4px solid rgba(128, 0, 128, 0.871);
+    box-shadow: 0 0 20px rgba(128, 0, 128, 0.7), inset 0 0 10px rgba(128, 0, 128, 0.3);
+  }
 }
 
+/* THE RHYTHM:
+   - 0s to 3s:   High Velocity (0.08s steps)
+   - 3s to 6s:   The Brake (Incremental slowing)
+   - 6s to 9s:   The Clacker (Heavy, distinct thuds)
+   - 9s to 11s:  The Final Roll (Winner selection)
+*/
+
+.box1 {
+  animation:
+    shuffle 0.08s linear 0s,    shuffle 0.08s linear 0.48s, shuffle 0.08s linear 0.96s,
+    shuffle 0.08s linear 1.44s, shuffle 0.08s linear 1.92s, shuffle 0.1s linear 2.5s,
+    shuffle 0.15s linear 3.2s,  shuffle 0.2s linear 4.1s,   shuffle 0.3s linear 5.3s,
+    shuffle 0.5s linear 7.1s,   shuffle 0.8s linear 9.6s forwards; /* THE WINNER */
+}
+
+.box2 {
+  animation:
+    shuffle 0.08s linear 0.08s, shuffle 0.08s linear 0.56s, shuffle 0.08s linear 1.04s,
+    shuffle 0.08s linear 1.52s, shuffle 0.08s linear 2.0s,  shuffle 0.1s linear 2.6s,
+    shuffle 0.15s linear 3.35s, shuffle 0.2s linear 4.3s,   shuffle 0.35s linear 5.6s,
+    shuffle 0.6s linear 7.6s;
+}
+
+.box3 {
+  animation:
+    shuffle 0.08s linear 0.16s, shuffle 0.08s linear 0.64s, shuffle 0.08s linear 1.12s,
+    shuffle 0.08s linear 1.6s,  shuffle 0.08s linear 2.08s, shuffle 0.1s linear 2.7s,
+    shuffle 0.15s linear 3.5s,  shuffle 0.25s linear 4.5s,  shuffle 0.4s linear 5.95s,
+    shuffle 0.6s linear 8.2s;
+}
+
+.box4 {
+  animation:
+    shuffle 0.08s linear 0.24s, shuffle 0.08s linear 0.72s, shuffle 0.08s linear 1.2s,
+    shuffle 0.08s linear 1.68s, shuffle 0.08s linear 2.16s, shuffle 0.12s linear 2.82s,
+    shuffle 0.15s linear 3.65s, shuffle 0.25s linear 4.75s, shuffle 0.4s linear 6.35s,
+    shuffle 0.7s linear 8.8s;
+}
+
+.box5 {
+  animation:
+    shuffle 0.08s linear 0.32s, shuffle 0.08s linear 0.8s,  shuffle 0.08s linear 1.28s,
+    shuffle 0.08s linear 1.76s, shuffle 0.08s linear 2.24s, shuffle 0.12s linear 2.94s,
+    shuffle 0.2s linear 3.8s,   shuffle 0.3s linear 5.0s,   shuffle 0.45s linear 6.8s;
+}
+
+.box6 {
+  animation:
+    shuffle 0.08s linear 0.4s,  shuffle 0.08s linear 0.88s, shuffle 0.08s linear 1.36s,
+    shuffle 0.08s linear 1.84s, shuffle 0.08s linear 2.32s, shuffle 0.12s linear 3.06s,
+    shuffle 0.2s linear 4.0s,   shuffle 0.3s linear 5.3s,   shuffle 0.5s linear 7.3s;
+}
