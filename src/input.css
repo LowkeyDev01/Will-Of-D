@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Teko:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Outfit:wght@100..900&family=Teko:wght@300..700&display=swap");
 @import "tailwindcss";
 
 .font-one {
@@ -6,6 +6,9 @@
 }
 .font-two {
   font-family: Teko;
+}
+.font-three{
+  font-family: "Cinzel";
 }
 .bgd {
   background-image: url(../_.jpeg);
